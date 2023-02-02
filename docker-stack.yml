@@ -1,0 +1,24 @@
+version: '3.8'
+services:
+  vault:
+    image: vault:latest
+    ports:
+      - "8200:8200"
+    volumes:
+      - ./volume/logs:/vault/logs
+      - ./volume/file:/vault/file
+      - ./config:/vault/config
+    cap_add:
+      - IPC_LOCK # https://developer.hashicorp.com/vault/docs/configuration#disable_mlock
+    entrypoint: vault server -config=/vault/config/vault.json
+
+  autounseal:
+    image: python-autounseal-vault:latest
+    secrets:
+      - keys
+    environment:
+      VAULT_ADDR: http://vault:8200
+      
+secrets:
+  keys:
+    external: true
