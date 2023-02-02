@@ -13,7 +13,7 @@ services:
     entrypoint: vault server -config=/vault/config/vault.json
 
   autounseal:
-    image: python-autounseal-vault:latest
+    image: marlonangeli/python-autounseal-vault:latest
     secrets:
       - keys
     environment:
