@@ -1,5 +1,7 @@
 # python-autounseal-vault
 
+:brazil: [Portuguese](README_pt-br.md)
+
 > ⚠️ This is a simple Python script that unseal Vault using your API. It isn’t the safest method, please check the [documentation](https://developer.hashicorp.com/vault/tutorials/auto-unseal).
 
 ## Why use this?
@@ -19,7 +21,7 @@ environment:
 	KEYS_PATH: <your_keys_path>
 ```
 
-After this, check your Vault host, if you use Docker you can use the `hostname` service.
+After this, check your Vault host and change if you need using `**VAULT_ADDR**` environment variable. If you use Docker you can use the `hostname` service.
 
 ---
 
@@ -34,6 +36,8 @@ After this, check your Vault host, if you use Docker you can use the `hostname` 
 ---
 
 ## How to build and run
+
+You can use the image in [Docker Hub](https://hub.docker.com/r/marlonangeli/python-autounseal-vault) or build your own image.
 
 1. You can clone this repository:
 
@@ -84,7 +88,7 @@ Your JSON file will be like this:
   "root_token": "hvs.IuLmJPDEqVeKaaGDrLh9ww5I"
 }
 ```
->💡 ******NOTE:****** If you change your keys, you need to remove your old secrets and recreate.
+>💡 **NOTE:** If you change your keys, you need to remove your old secrets and recreate. Use the script `recreate-secrets.sh` to do this.
 
 4. Check if Docker Swarm is enabled:
 

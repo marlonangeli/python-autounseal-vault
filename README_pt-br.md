@@ -1,5 +1,7 @@
 # python-autounseal-vault
 
+:us: [English](README.md)
+
 > ⚠️ Esse é um simples script Python “deslacrar” o Vault utilizando sua API. Esse não é o método mais seguro, por favor cheque a [documentação](https://developer.hashicorp.com/vault/tutorials/auto-unseal).
 
 ## Porque usar isso?
