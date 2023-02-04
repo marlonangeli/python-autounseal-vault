@@ -6,7 +6,8 @@
 	],
 	"settings": {
 		"yaml.schemas": {
-			"https://raw.githubusercontent.com/compose-spec/compose-spec/master/schema/compose-spec.json": "docker-stack.yml"
+			"https://raw.githubusercontent.com/compose-spec/compose-spec/master/schema/compose-spec.json": "docker-stack.yml",
+			"https://json.schemastore.org/github-workflow.json": "file:///d%3A/MEGA/Dev/Projects/repos/python-autounseal-vault/.github/workflow/dockerhub_description.yml"
 		}
 	}
 }
