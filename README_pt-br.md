@@ -1,6 +1,6 @@
 # python-autounseal-vault
 
-:us: [English](README.md)
+:us: [English](README.md) | :brazil: [Portuguese](README_pt-br.md)
 
 > ⚠️ Esse é um simples script Python “deslacrar” o Vault utilizando sua API. Esse não é o método mais seguro, por favor cheque a [documentação](https://developer.hashicorp.com/vault/tutorials/auto-unseal).
 
@@ -97,7 +97,7 @@ Seu arquivo JSON vai se parecer com isso:
 docker node ls
 ```
 
-Se você não estiver no modo Swam, use
+Se você não estiver no modo Swarm, use
 
 ```bash
 docker swarm init

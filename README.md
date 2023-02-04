@@ -1,6 +1,6 @@
 # python-autounseal-vault
 
-:brazil: [Portuguese](README_pt-br.md)
+:brazil: [Portuguese](README_pt-br.md) | :us: [English](README.md)
 
 > ⚠️ This is a simple Python script that unseal Vault using your API. It isn’t the safest method, please check the [documentation](https://developer.hashicorp.com/vault/tutorials/auto-unseal).
 
