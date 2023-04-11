@@ -111,3 +111,10 @@ docker stack deploy -c docker-stack.yml secrets
 Now, cross your fingers and hope it works 🙃
 
 You can check the logs for info or errors in container.
+
+---
+You can check the logs for info or errors in container.
+
+```bash
+docker service logs secrets_autounseal
+```
